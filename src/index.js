@@ -10,13 +10,13 @@ app.listen(3000, () => {
  console.log("Server running on port 3000");
 });
 
-app.post("/otp/:token", (req, res, next) => {
+app.post("/otp/:token", (req, res) => {
   const otp = otpManager.create(req.params.token);
   otpSender.send(otp, req.body);      //{messengerId: "YOUR_MESSENGER_ID", phoneNumber: "YOUR_PHONE_NUMBER"}
   res.sendStatus(201);
  });
 
- app.get("/otp/:token/:code", (req, res, next) => {
+ app.get("/otp/:token/:code", (req, res) => {
     const verificationResults = otpManager.VerificationResults;
     const verificationResult = otpManager.verify(req.params.token, req.params.code);
     let statusCode;
