@@ -1,0 +1,21 @@
+{
+  "name": "otp-manager",
+  "version": "1.0.0",
+  "description": "A one-time-password system",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": ""
+  },
+  "author": "Andrea Chiarelli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nexmo": "^2.4.2-beta-1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
