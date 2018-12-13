@@ -10,9 +10,11 @@ app.listen(3000, () => {
  console.log("Server running on port 3000");
 });
 
+app.use(express.json());
+
 app.post("/otp/:token", (req, res) => {
   const otp = otpManager.create(req.params.token);
-  otpSender.send(otp, req.body);      //{messengerId: "YOUR_MESSENGER_ID", phoneNumber: "YOUR_PHONE_NUMBER"}
+  otpSender.send(otp, req.body);
   res.sendStatus(201);
  });
 
