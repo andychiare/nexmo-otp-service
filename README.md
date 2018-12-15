@@ -43,7 +43,7 @@ Postman-Token: 759b8a9f-ac82-4e66-afd3-144e039ca23d
 
 The `123456789` value identifies your request and is up to you providing it.
 
-If the server creates the OTP, you should receive the *201 Accepted* HTTP status.
+If the server creates the OTP, you should receive the *201 Created* HTTP status.
 
 ### Verifying the OTP
 
