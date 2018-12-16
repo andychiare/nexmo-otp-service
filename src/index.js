@@ -12,6 +12,10 @@ app.listen(3000, () => {
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("This is the OTP service");
+});
+
 app.post("/otp/:token", (req, res) => {
   const otp = otpManager.create(req.params.token);
   otpSender.send(otp, req.body);
