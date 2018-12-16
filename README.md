@@ -37,8 +37,7 @@ POST /otp/123456789 HTTP/1.1
 Host: localhost:3000
 Content-Type: application/json
 cache-control: no-cache
-Postman-Token: 759b8a9f-ac82-4e66-afd3-144e039ca23d
-{"messengerId": "8192836451", "phoneNumber": "393393423268"}
+{"messengerId": "8192836451", "phoneNumber": "393331234567"}
 ```
 
 The `123456789` value identifies your request and is up to you providing it.
