@@ -1,6 +1,6 @@
 # OTP service via Nexmo Dispatch APIs
 
-This is a Node.js sample project showing how to create an OTP (*One Time Password*) Web service using the [Nexmo Dispatch APIs](https://www.nexmo.com/products/dispatch) as delivery service.
+This is a Node.js sample project showing how to create an OTP (*One Time Password*) Web service using the [Nexmo Dispatch APIs](https://www.nexmo.com/products/dispatch) as delivery service. This project is described by the article [Build a One-Time Password (OTP) Service Using the Dispatch API](https://www.nexmo.com/blog/2019/02/07/build-an-otp-service-dr/).
 
 ## Setting up the project
 
